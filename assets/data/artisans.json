@@ -16,7 +16,7 @@
     "available": "MON,TUE,WED",
     "skills": ["Carpentry", "Woodworking"],
     "languages": ["English"],
-    "image": "url_to_image",
+    "image": "portrait1.jpg",
     "latitude": -26.100592,
     "longitude": 28.178776
   },
@@ -37,7 +37,7 @@
     "available": "THU,FRI,SAT",
     "skills": ["Plumbing", "Pipe Installation"],
     "languages": ["Spanish"],
-    "image": "url_to_image",
+    "image": "portrait2.jpg",
     "latitude": -26.005,
     "longitude": 28.1
   },
@@ -58,7 +58,7 @@
     "available": "MON,TUE,WED",
     "skills": ["Carpentry", "Woodworking"],
     "languages": ["English"],
-    "image": "url_to_image",
+    "image": "portrait3.jpg",
     "latitude": -25.900092,
     "longitude": 28.198776
   },
@@ -79,7 +79,7 @@
     "available": "THU,FRI,SAT",
     "skills": ["Plumbing", "Pipe Installation"],
     "languages": ["Spanish"],
-    "image": "url_to_image",
+    "image": "portrait4.jpg",
     "latitude": -26.005,
     "longitude": 28.18
   },
@@ -100,7 +100,7 @@
     "available": "MON,WED,FRI",
     "skills": ["Interior Painting", "Exterior Painting"],
     "languages": ["Spanish"],
-    "image": "url_to_image",
+    "image": "portrait5.jpg",
     "latitude": -26.0825,
     "longitude": 28.0285
   },
@@ -121,7 +121,7 @@
     "available": "TUE,THU,SAT",
     "skills": ["Pipe Installations", "Repairs"],
     "languages": ["French"],
-    "image": "url_to_image",
+    "image": "portrait6.jpg",
     "latitude": -26.1145,
     "longitude": 28.2785
   }
