@@ -1,3 +1,4 @@
+//// Imports ////
 import {
   View,
   Text,
@@ -8,8 +9,18 @@ import {
 } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { useNavigation } from "@react-navigation/native";
+//--//
 
 export default function LoginScreen() {
+  /// Functions ///
+  const navigation = useNavigation();
+  const handleSignIn = () => {
+    navigation.navigate("Home");
+  };
+
+  //--//
+
   return (
     <SafeAreaView className="flex flex-col gap-2 justify-center bg-[#ffffff] items-center w-screen h-screen ">
       <View className="">
@@ -33,7 +44,7 @@ export default function LoginScreen() {
         secureTextEntry={true}
       />
       <TouchableOpacity
-        onPress={null}
+        onPress={handleSignIn}
         className="bg-blue-950 w-[70vw]  p-3 rounded-md"
       >
         <Text className="text-white text-center"> Sign In </Text>
