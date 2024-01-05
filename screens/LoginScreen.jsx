@@ -1,25 +1,16 @@
-//// Imports ////
-import {
-  View,
-  Text,
-  Image,
-  TextInput,
-  Button,
-  TouchableOpacity,
-} from "react-native";
+import { View, Text, Image, TextInput, TouchableOpacity } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
-//--//
 
-export default function LoginScreen() {
-  /// Functions ///
+export default function LoginScreen({ onSignIn }) {
   const navigation = useNavigation();
+
   const handleSignIn = () => {
+    // Call the onSignIn function passed as a prop
+    onSignIn();
     navigation.navigate("Home");
   };
-
-  //--//
 
   return (
     <SafeAreaView className="flex flex-col gap-2 justify-center bg-[#ffffff] items-center w-screen h-screen ">
