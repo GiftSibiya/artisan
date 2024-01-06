@@ -17,7 +17,7 @@ const HomeStack = () => (
       headerShown: false,
     }}
   >
-    <Stack.Screen name="Home" component={HomeScreen} />
+    <Stack.Screen name="HomeStackHome" component={HomeScreen} />
   </Stack.Navigator>
 );
 
@@ -27,7 +27,7 @@ const WorkOrderStack = () => (
       headerShown: false,
     }}
   >
-    <Stack.Screen name="Work Order" component={WorkOrderScreen} />
+    <Stack.Screen name="WorkOrderStackWorkOrder" component={WorkOrderScreen} />
   </Stack.Navigator>
 );
 
@@ -37,7 +37,7 @@ const ChatStack = () => (
       headerShown: false,
     }}
   >
-    <Stack.Screen name="Chat" component={ChatScreen} />
+    <Stack.Screen name="ChatStackChat" component={ChatScreen} />
   </Stack.Navigator>
 );
 
@@ -47,13 +47,13 @@ const ProfileStack = () => (
       headerShown: false,
     }}
   >
-    <Stack.Screen name="Profile" component={ProfileScreen} />
+    <Stack.Screen name="ProfileStackProfile" component={ProfileScreen} />
   </Stack.Navigator>
 );
 
 export default function Navigation() {
   return (
-    <NavigationContainer>
+    <NavigationContainer independent={true}>
       <Tab.Navigator
         screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
