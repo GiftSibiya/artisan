@@ -1,22 +1,21 @@
 [
   {
     "id": 1,
-    "name": "John",
-    "surname": "Doe",
-    "email": "john.doe@example.com",
+    "name": "Nozipo",
+    "surname": "Khanya",
+    "email": "Nozi.Khanya@example.com",
     "bio": "Experienced artisan specializing in carpentry.",
-    "phoneNumber": "+123456789",
+    "phoneNumber": "0712345678",
     "qualification": {
       "qualificationName": "Carpentry Certification",
       "qualificationDate": "2023-01-01",
-      "qualificationInstitution": "Artisan Institute"
+      "qualificationInstitution": "TUT"
     },
-    "institution": "Artisan Guild",
     "gender": "Male",
     "available": "MON,TUE,WED",
     "skills": ["Carpentry", "Woodworking"],
     "languages": ["English"],
-    "image": "portrait1.jpg",
+    "image": "https://img.freepik.com/free-photo/cheerful-african-american-female-factory-employee-hardhat-overall-standing-plant-floor-looking-front-smiling_74855-16344.jpg?w=1380&t=st=1704512304~exp=1704512904~hmac=5abaefa5cfc754e016405e499dad17663df9a71a74f3710259eba44562e30e81",
     "latitude": -26.100592,
     "longitude": 28.178776
   },
@@ -32,12 +31,11 @@
       "qualificationDate": "2023-02-01",
       "qualificationInstitution": "Trade School"
     },
-    "institution": "Plumbing Experts",
     "gender": "Female",
     "available": "THU,FRI,SAT",
     "skills": ["Plumbing", "Pipe Installation"],
     "languages": ["Spanish"],
-    "image": "portrait2.jpg",
+    "image": "https://img.freepik.com/free-photo/laughing-young-african-american-builder-uniform-holding-clipboard-isolated-blue-background_141793-139907.jpg?w=1380&t=st=1704512970~exp=1704513570~hmac=03e314101da6ab1be926f1476be44ea93e02bc7aa42a821104622cddd7155dbf",
     "latitude": -26.005,
     "longitude": 28.1
   },
@@ -53,20 +51,19 @@
       "qualificationDate": "2023-01-01",
       "qualificationInstitution": "Artisan Institute"
     },
-    "institution": "Artisan Guild",
     "gender": "Male",
     "available": "MON,TUE,WED",
     "skills": ["Carpentry", "Woodworking"],
     "languages": ["English"],
-    "image": "portrait3.jpg",
+    "image": "https://img.freepik.com/free-photo/close-up-delivery-person-after-leaving-parcel-client_23-2149095918.jpg?w=1380&t=st=1704513050~exp=1704513650~hmac=20a9a23b18bf3d1b5f36d60ee027ee28662e6828a982ec5846765f684a63d673",
     "latitude": -25.900092,
     "longitude": 28.198776
   },
   {
     "id": 4,
-    "name": "Jane",
-    "surname": "Smith",
-    "email": "jane.smith@example.com",
+    "name": "Victoria",
+    "surname": "Shabane",
+    "email": "VictoriaSH@example.com",
     "bio": "Skilled artisan with expertise in plumbing.",
     "phoneNumber": "+987654321",
     "qualification": {
@@ -74,12 +71,11 @@
       "qualificationDate": "2023-02-01",
       "qualificationInstitution": "Trade School"
     },
-    "institution": "Plumbing Experts",
     "gender": "Female",
     "available": "THU,FRI,SAT",
     "skills": ["Plumbing", "Pipe Installation"],
     "languages": ["Spanish"],
-    "image": "portrait4.jpg",
+    "image": "https://img.freepik.com/free-photo/portrait-african-american-man-factory_1303-30630.jpg?w=1380&t=st=1704513048~exp=1704513648~hmac=5c7db7be756a93fe1df2759e94e4fb99baaabb884c27507d64941f4b3f24a373",
     "latitude": -26.005,
     "longitude": 28.18
   },
@@ -95,12 +91,11 @@
       "qualificationDate": "2023-02-15",
       "qualificationInstitution": "Artistic School"
     },
-    "institution": "Color Masters",
     "gender": "Male",
     "available": "MON,WED,FRI",
     "skills": ["Interior Painting", "Exterior Painting"],
     "languages": ["Spanish"],
-    "image": "portrait5.jpg",
+    "image": "https://img.freepik.com/free-photo/man-posing-with-helmet-medium-shot_23-2148920603.jpg?w=1060&t=st=1704513032~exp=1704513632~hmac=bdc88bba7ff33d936f642f679f6e7ce0a46f22af52a7b7710bb66e080db5173c",
     "latitude": -26.0825,
     "longitude": 28.0285
   },
@@ -116,12 +111,11 @@
       "qualificationDate": "2023-01-20",
       "qualificationInstitution": "Trade School"
     },
-    "institution": "Pipe Masters",
     "gender": "Female",
     "available": "TUE,THU,SAT",
     "skills": ["Pipe Installations", "Repairs"],
     "languages": ["French"],
-    "image": "portrait6.jpg",
+    "image": "https://img.freepik.com/free-photo/front-view-smiley-woman-holding-crossed-arms_52683-86492.jpg?w=1380&t=st=1704513017~exp=1704513617~hmac=abe36fbd5504e4d3ae4d505393d9d7287e2a75fef93a31856c7fcaeec4c91a40",
     "latitude": -26.1145,
     "longitude": 28.2785
   }

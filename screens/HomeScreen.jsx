@@ -5,8 +5,7 @@ import MapView, { Marker } from "react-native-maps";
 //
 
 /// Component import ///
-import HomeComponent from "../components/HomeComponent";
-import Artisans from "../assets/data/artisans.json";
+import artisans from "../assets/data/artisans.json";
 import ArtisanList from "../components/ArtisanList";
 //
 
@@ -23,7 +22,7 @@ export default function HomeScreen() {
           longitudeDelta: 0.2,
         }}
       >
-        {Artisans.map((artisan) => (
+        {artisans.map((artisan) => (
           <Marker
             key={artisan.id}
             coordinate={{
@@ -46,10 +45,8 @@ export default function HomeScreen() {
           </Marker>
         ))}
       </MapView>
-      <ArtisanList artisan={Artisans[0]} />
-      <View className="absolute bottom-0">
-        <HomeComponent className="relative border-2" />
-      </View>
+      <ArtisanList artisan={artisans[0]} />
+      <View className="absolute bottom-0"></View>
     </View>
   );
 }
