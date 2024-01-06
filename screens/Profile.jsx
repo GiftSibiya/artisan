@@ -6,7 +6,7 @@ export class Profile extends Component {
     return (
       <View className="flex flex-col w-screen h-screen justify-between bg-blue-900">
         {/* Top Bar */}
-        <View className="h- w-screen ">
+        <View className="h-screen w-screen bg-white ">
           {/* First Row */}
           <View className="flex flex-row w-screen mt-[5vh] h-[20vh] ">
             <Image
