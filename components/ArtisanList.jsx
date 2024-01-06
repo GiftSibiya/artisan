@@ -19,11 +19,7 @@ const ArtisanList = ({ artisan }) => {
       <TouchableOpacity
         onPress={handleListCancel}
         className="absolute bg-red bottom-0 right-[0px]"
-      >
-        <Text className="p-[2px] rounded-2xl text-center w-8 h-8 text-white font-bold text-[20px] bg-red-600">
-          X
-        </Text>
-      </TouchableOpacity>
+      ></TouchableOpacity>
       <Image
         className="w-[150px] rounded-2xl h-[200px]"
         source={{ uri: artisan.image }}
