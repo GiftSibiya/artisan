@@ -1,8 +1,14 @@
-import { View, Text, Image } from "react-native";
+/// Import dependancies
 import React from "react";
+import { View, Text, Image } from "react-native";
 import MapView, { Marker } from "react-native-maps";
+//
+
+/// Component import ///
 import HomeComponent from "../components/HomeComponent";
 import Artisans from "../assets/data/artisans.json";
+import ArtisanList from "../components/ArtisanList";
+//
 
 export default function HomeScreen() {
   return (
@@ -40,6 +46,7 @@ export default function HomeScreen() {
           </Marker>
         ))}
       </MapView>
+      <ArtisanList artisan={Artisans[0]} />
       <View className="absolute bottom-0">
         <HomeComponent className="relative border-2" />
       </View>
