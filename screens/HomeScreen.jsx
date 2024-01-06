@@ -1,20 +1,29 @@
-/// Import dependancies
-import React from "react";
+// Dependancies Imports //
+import React, { useState, useMemo } from "react";
 import { View, Text, Image } from "react-native";
 import MapView, { Marker } from "react-native-maps";
 //
 
-/// Component import ///
+// Files Imports //
 import artisans from "../assets/data/artisans.json";
 import ArtisanList from "../components/ArtisanList";
 //
 
 export default function HomeScreen() {
+  const [selectedArtisan, setSelectedArtisan] = useState(null);
+  // Bottom Sheet //
+  const snapPoints = useMemo(() => ["25%", "50%"], []);
+
+  const handleMarkerClick = (index) => {
+    setSelectedArtisan(artisans[index]);
+  };
+
   return (
-    <View className="flex h-screen w-screen items-center">
+    <View
+      style={{ flex: 1, height: "100%", width: "100%", alignItems: "center" }}
+    >
       <MapView
-        // Initial Map Location
-        className="h-screen w-screen"
+        style={{ flex: 1, height: "100%", width: "100%" }}
         initialRegion={{
           latitude: -26.003592,
           longitude: 28.178776,
@@ -22,7 +31,7 @@ export default function HomeScreen() {
           longitudeDelta: 0.2,
         }}
       >
-        {artisans.map((artisan) => (
+        {artisans.map((artisan, index) => (
           <Marker
             key={artisan.id}
             coordinate={{
@@ -31,22 +40,20 @@ export default function HomeScreen() {
             }}
             title={`${artisan.name} ${artisan.surname}`}
             description={`Qualified Artisan: ${artisan.qualification.qualificationName}`}
+            onPress={() => handleMarkerClick(index)}
           >
             <Image
               style={{
                 width: 40,
                 height: 40,
-                // Apply NativeWind styles here
-                // For example, you can use the 'rounded-full' class
-                roundedFull: true,
+                borderRadius: 20,
               }}
-              source={require("../assets/logo/worker.png")} // Add the source prop with the correct path to your image
+              source={require("../assets/logo/worker.png")}
             />
           </Marker>
         ))}
       </MapView>
-      <ArtisanList artisan={artisans[0]} />
-      <View className="absolute bottom-0"></View>
+      {selectedArtisan && <ArtisanList artisan={selectedArtisan} />}
     </View>
   );
 }
