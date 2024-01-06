@@ -7,6 +7,7 @@ import HomeScreen from "./screens/HomeScreen";
 import WorkOrderScreen from "./screens/WorkOrder";
 import ChatScreen from "./screens/Chats";
 import ProfileScreen from "./screens/Profile";
+import ArtisanProfileScreen from "./screens/ArtisanProfile"; // Import the ArtisanProfile screen
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -28,6 +29,7 @@ const WorkOrderStack = () => (
     }}
   >
     <Stack.Screen name="WorkOrderStackWorkOrder" component={WorkOrderScreen} />
+    <Stack.Screen name="ArtisanProfile" component={ArtisanProfileScreen} />
   </Stack.Navigator>
 );
 
@@ -69,7 +71,6 @@ export default function Navigation() {
               iconName = focused ? "person" : "person-outline";
             }
 
-            // You can return any component here to render custom icons
             return <Ionicons name={iconName} size={size} color={color} />;
           },
         })}

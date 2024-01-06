@@ -30,6 +30,7 @@ export default function HomeScreen() {
           latitudeDelta: 0.2,
           longitudeDelta: 0.2,
         }}
+        onPress={() => setSelectedArtisan(null)} // Use onPress for the MapView
       >
         {artisans.map((artisan, index) => (
           <Marker

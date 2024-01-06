@@ -1,9 +1,29 @@
-import { View, Text, Image } from "react-native";
+// Dependencies Import //
+import { View, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
+import { useNavigation } from "@react-navigation/native";
+//--//
 
 const ArtisanList = ({ artisan }) => {
+  const navigation = useNavigation();
+
+  viewProfile = () => {
+    navigation.navigate("ArtisanProfile");
+  };
+
+  const handleListCancel = () => {};
+
   return (
     <View className="flex flex-row absolute top-[20px] w-[90vw] rounded-xl h-[18vh] bg-white aspect-square overflow-hidden ">
+      <View></View>
+      <TouchableOpacity
+        onPress={handleListCancel}
+        className="absolute bg-red bottom-0 right-[0px]"
+      >
+        <Text className="p-[2px] rounded-2xl text-center w-8 h-8 text-white font-bold text-[20px] bg-red-600">
+          X
+        </Text>
+      </TouchableOpacity>
       <Image
         className="w-[150px] rounded-2xl h-[200px]"
         source={{ uri: artisan.image }}
@@ -20,7 +40,9 @@ const ArtisanList = ({ artisan }) => {
           <Text className="text-[12px] font-bold">Contact</Text>{" "}
           {`${artisan.phoneNumber}`}
         </Text>
-        <Text className="text-[12px] text-blue-600 mt-1">View Profile</Text>
+        <TouchableOpacity onPress={viewProfile}>
+          <Text className="text-blue-700 text-center"> View Profile </Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
