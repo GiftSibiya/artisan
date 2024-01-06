@@ -1,9 +1,15 @@
-import { ScrollView, Text, View, Image } from "react-native";
+import { ScrollView, Text, View, Image, TouchableOpacity } from "react-native";
 import React from "react";
 import artisans from "../assets/data/artisans.json";
+import { useNavigation } from "@react-navigation/native";
 
 const WorkOrder = () => {
   const firstThreeArtisans = artisans.slice(0, 3);
+  const navigation = useNavigation();
+
+  viewProfile = () => {
+    navigation.navigate("ArtisanProfile");
+  };
 
   return (
     <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
@@ -37,9 +43,12 @@ const WorkOrder = () => {
               >
                 Schedule: {artisan.WorkDate}
               </Text>
-              <Text className="text-[15px] text-blue-600 mt-1 ">
-                View Profile
-              </Text>
+              <TouchableOpacity onPress={viewProfile}>
+                <Text className="text-blue-700 text-center">
+                  {" "}
+                  View Profile{" "}
+                </Text>
+              </TouchableOpacity>
             </View>
           </View>
         </View>
