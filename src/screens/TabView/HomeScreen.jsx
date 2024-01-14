@@ -6,7 +6,7 @@ import MapView, { Marker } from "react-native-maps";
 
 // Files Imports //
 import artisans from "../assets/data/artisans.json";
-import ArtisanList from "../components/ArtisanList";
+import ArtisanList from "../../components/ArtisanList";
 //
 
 export default function HomeScreen() {

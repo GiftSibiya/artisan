@@ -10,7 +10,7 @@ import LoginScreen from "./screens/LoginScreen";
 import HomeScreen from "./screens/HomeScreen";
 import WorkOrderScreen from "./screens/WorkOrder";
 import ChatScreen from "./screens/Chats";
-import ProfileScreen from "./screens/Profile";
+import ProfileScreen from "./src/screens/TabView/Profile";
 import ArtisanProfileScreen from "./screens/ArtisanProfile";
 
 const Stack = createNativeStackNavigator();
